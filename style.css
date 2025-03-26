@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(wolfgang-hasselmann-bR_-gllg7Bs-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+#app{
+    height: 500px;
+    width: 500px;
+    background-image: url(noaa-kcvlb727mn8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+ 
+}
+.input{
+    border: 2px solid black;
+    font-size: 1rem;
+    text-align: center;
+}
+.btn{
+    background-color: hsl(110, 90%, 39%);
+    font-size: 1rem;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    min-width: 100px;
+}
+.btn:hover{
+    background-color:  hsl(110, 90%, 49%);
+}
+.btn:active{
+    background-color:  hsl(110, 90%, 59%);
+}
+.card  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    min-width: 200px;
+    background-image: url(noaa-kcvlb727mn8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-height: fit-content;
+    color: rgb(255, 252, 252);
+}
+h1{
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+
+}
+p{
+    font-size: 1rem;
+    
+}
+.emojestyle{
+    font-size: 2rem;
+    margin-top: 0%;
+}
+
+#error{
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+}
