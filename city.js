@@ -24,7 +24,7 @@ function success(position) {
 }
 
 function error(err) {
-  updateStatus(`Error: ${err.message}`);
+  alert("failed to fetch the data");
 }
 
 if ('geolocation' in navigator) {
