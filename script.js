@@ -1,11 +1,12 @@
+alert("please trun on your location");
+import { address } from "./2.js";
 const weatherform = document.querySelector('form');
-const cityinput=document.querySelector('input');
 const card=document.querySelector('.card');
+const cityinput=document.querySelector('.input');
 const apikey="30fc240ac4189daf7927484c85a2b10c";
-
 weatherform.addEventListener('submit', async event => {
     event.preventDefault();
-    const city=cityinput.value;
+    const city=address;
 
     if(city) {
         try{
