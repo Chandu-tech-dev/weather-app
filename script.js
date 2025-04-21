@@ -1,13 +1,12 @@
-alert("please trun on your location");
-import { address } from "./2.js";
+alert("please turn on your location ")
+import { address } from "./city.js";
 const weatherform = document.querySelector('form');
 const card=document.querySelector('.card');
-const cityinput=document.querySelector('.input');
 const apikey="30fc240ac4189daf7927484c85a2b10c";
 weatherform.addEventListener('submit', async event => {
     event.preventDefault();
     const city=address;
-
+    console.log(city);
     if(city) {
         try{
             const weatherdata=await getweathredata(city);

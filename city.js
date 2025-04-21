@@ -11,11 +11,8 @@ function fetchCityName(lat, lon) {
         city = data.address.city || data.address.town || data.address.village || 'Unknown';
         getweatherdata(city);
       } 
-      document.getElementById('city').textContent = city;
     })
-    .catch(() => {
-      document.getElementById('city').textContent = 'Error fetching city';
-    });
+    
 }
 
 function success(position) {
@@ -28,9 +25,6 @@ function success(position) {
 
 function error(err) {
   updateStatus(`Error: ${err.message}`);
-  document.getElementById('latitude').textContent = 'N/A';
-  document.getElementById('longitude').textContent = 'N/A';
-  document.getElementById('city').textContent = 'N/A';
 }
 
 if ('geolocation' in navigator) {
@@ -45,6 +39,5 @@ if ('geolocation' in navigator) {
 let address;
 function getweatherdata(cityname) {
  address=cityname;
-  console.log(address);
 }
 export { address };
